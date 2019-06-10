@@ -2,7 +2,7 @@
   "app": {
     "name": "AlexaPodcastPlayer",
     "port": 3000,
-    "secret": "rwp*luNrhZ2ipJNUzLLwztQSF1GC)Ugp",
+    "secret": "rwp*luNrhZ2ipJNUzLLwztQSF1GC)Ugo",
     "url": ""
   },
   "jwt": {
