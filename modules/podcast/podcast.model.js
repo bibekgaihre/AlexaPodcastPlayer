@@ -34,6 +34,10 @@ const podcastSchema = mongoose.Schema(
     audio_url: {
       type: String,
       required: true
+    },
+    user: {
+      type: objectId,
+      ref: "User"
     }
   },
   {
