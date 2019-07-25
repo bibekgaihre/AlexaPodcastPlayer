@@ -7,10 +7,6 @@ const podcastSchema = mongoose.Schema(
       type: String,
       required: true
     },
-    artist: {
-      type: objectId,
-      ref: "Artist"
-    },
     album: {
       type: objectId,
       ref: "Album"

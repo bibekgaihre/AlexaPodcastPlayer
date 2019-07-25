@@ -12,7 +12,7 @@
             <img src="/images/icons/logo.png" alt="IMG" />
           </div>
 
-          <form class="login100-form validate-form">
+          <form class="login100-form validate-form" id="frmLogin">
             <span class="login100-form-title">
               Podmio Login
             </span>
@@ -37,7 +37,7 @@
             </div>
 
             <div class="container-login100-form-btn">
-              <button class="login100-form-btn">
+              <button class="login100-form-btn" id="btnLogin">
                 Login
               </button>
             </div>
@@ -50,7 +50,12 @@
                 Password?
               </a>
             </div>
-
+            <div
+              class="text-center p-t-136 alert alert-danger"
+              id="msg"
+              role="alert"
+              style="color:#90010f;background-color:#ffffff;border-color: #ffffff; "
+            ></div>
             <div class="text-center p-t-136">
               <a class="txt2" href="#">
                 Create your Account
@@ -62,5 +67,16 @@
       </div>
     </div>
     <% include layouts/foot %>
+    <script src="/js/app/user.js"></script>
+    <script>
+      var user = new User();
+      $(document).ready(function() {
+        $("#msg").hide();
+        $("#btnLogin").click(function(e) {
+          e.preventDefault();
+          user.login();
+        });
+      });
+    </script>
   </body>
 </html>
